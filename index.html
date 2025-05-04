@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+    .container{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left: 5px;
+        font-weight: 550;
+    }
+    .box1 svg{
+        color: orange;
+        margin-bottom: 170px;
+    }
+    .box2 p{
+        font-size: 70px;
+        position: relative;
+        left: 340px;
+        margin-bottom: 20px;
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    .one, .two, .three, .four, .five{
+        display: flex;
+        gap: 10px;
+    }
+    input{
+        width: 400px;
+        height: 70px;
+        background-color: black;
+        border: none;
+        color: white;
+        font-size: 70px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        text-align: right;
+        direction: ltr;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg>
+        </div>
+
+        <div class="box2">
+            <input id="display">
+        </div>
+
+        <div class="box3">
+            <div class="one">
+                <p class="remove" style="background-color: rgb(116, 116, 116); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">AC</p>
+                <p class="pl-min" style="background-color: rgb(116, 116, 116); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">+/-</p>
+                <p class="procent" style="background-color: rgb(116, 116, 116); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">%</p>
+                <p class="bolu" style="background-color: orange; border-radius: 50px; padding: 17px; font-size: 40px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">/</p>
+            </div>
+
+            <div class="two">
+                <p class="zheti" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">7</p>
+                <p class="sekiz" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">8</p>
+                <p class="tokuz" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">9</p>
+                <p class="kobeitu" style="background-color: orange; border-radius: 50px; padding: 17px; font-size: 40px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">x</p>
+            </div>
+
+            <div class="three">
+                <p class="tort" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">4</p>
+                <p class="bes" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">5</p>
+                <p class="alty" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">6</p>
+                <p class="minus" style="background-color: orange; border-radius: 50px; padding: 17px; font-size: 40px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">-</p>
+            </div>
+
+            <div class="four">
+                <p class="bir" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">1</p>
+                <p class="eki" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">2</p>
+                <p class="ush" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">3</p>
+                <p class="kosu" style="background-color: orange; border-radius: 50px; padding: 17px; font-size: 40px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">+</p>
+            </div>
+
+            <div class="five">
+                <svg style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calculator-fill" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5m0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z"/>
+                </svg>
+                <p class="nol" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">0</p>
+                <p class="utir" style="background-color: rgb(45, 45, 45); border-radius: 50px; padding: 17px; font-size: 35px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">,</p>
+                <p class="ten" style="background-color: orange; border-radius: 50px; padding: 17px; font-size: 40px; width: 90px; height: 90px; display: flex; justify-content: center; align-items: center;">=</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
